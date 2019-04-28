@@ -9,7 +9,7 @@
     "ngInject";
     var vm = this;
 
-    vm.message = "Welcome to the home page";
+    // vm.message = "Welcome to the home page";
   }
 
 })();
