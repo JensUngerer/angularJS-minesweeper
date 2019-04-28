@@ -23,6 +23,7 @@ const scripts = [
   'app/services/**/*.js',
   'app/directives/**/*.js',
   'app/views/**/*.js',
+  'app/components/**/*.js',
   '!app/**/*.test.js',
   '!app/app.min.js'
 ];
@@ -30,7 +31,8 @@ const scripts = [
 const styles = [
   'app/index.scss',
   'app/directives/**/*.scss',
-  'app/views/**/*.scss'
+  'app/views/**/*.scss',
+  //'app/components/**/*.scss',
 ], styleIncludes = [
   'node_modules/angular-material'
 ];
