@@ -6,8 +6,9 @@
         controller: function () {
             var vm = this;
             vm.title = 'Minesweeper-Game-Component from the ctrl';
-            console.log(vm.title);
-            /*
+            // DEBUGGING:
+            // console.log(vm.title);
+            
             vm.reset = reset;
             vm.game = new MinesweeperGame(5, 8, 7);
             
@@ -25,7 +26,7 @@
 
             function reset() {
                 vm.game.reset();
-            }*/
+            }
         },
         controllerAs: 'vm'
     };

@@ -13,6 +13,9 @@ const { series, parallel, src, dest, watch } = require('gulp'),
 
 
 const scripts = [
+  'app/logic/minesweeperFieldState/*.js',
+  'app/logic/minesweeperField/*.js',
+  'app/logic/minesweeperGame/*.js',
   'node_modules/angular/angular.js',
   'node_modules/angular-*/*.js',
   '!node_modules/angular*/*.min.js',
@@ -21,10 +24,9 @@ const scripts = [
   '!node_modules/angular*/index.js',
   'app/index.js',
   'app/services/**/*.js',
+  'app/components/**/*.js',
   'app/directives/**/*.js',
   'app/views/**/*.js',
-  'app/components/**/*.js',
-  'app/logic/**/*.js',
   '!app/**/*.test.js',
   '!app/app.min.js'
 ];
