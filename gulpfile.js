@@ -13,7 +13,7 @@ const { series, parallel, src, dest, watch } = require('gulp'),
 
 
 const scripts = [
-  'app/logic/minesweeperFieldState/*.js',
+  'app/logic/minesweeperFiledState/minesweeperFiledState.js',
   'app/logic/minesweeperField/*.js',
   'app/logic/minesweeperGame/*.js',
   'node_modules/angular/angular.js',
@@ -35,7 +35,7 @@ const styles = [
   'app/index.scss',
   'app/directives/**/*.scss',
   'app/views/**/*.scss',
-  'app/components/**/*.scss',
+  'app/components/minesweeper-field/minesweeper-field.scss',
 ], styleIncludes = [
   'node_modules/angular-material'
 ];
