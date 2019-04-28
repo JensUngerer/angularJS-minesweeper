@@ -2,7 +2,7 @@
   "use strict";
 
   angular
-    .module('myApp')
+    .module('minesweeperApp')
     .directive('navbar', navbar);
 
   function navbar() {

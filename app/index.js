@@ -2,7 +2,7 @@
   "use strict";
 
   angular.module('templates', []);
-  angular.module('myApp', ['ngRoute', 'ngMaterial', 'templates']);
+  angular.module('minesweeperApp', ['ngRoute', 'ngMaterial', 'templates']);
 
   function config ($routeProvider, $locationProvider, $mdThemingProvider, $compileProvider, $httpProvider) {
     "ngInject";
@@ -36,11 +36,11 @@
   }
 
   function run() {
-    console.log('Module myApp running');
+    console.log('Module minesweeperApp running');
   }
   
   angular
-    .module('myApp')
+    .module('minesweeperApp')
     .config(config)
     .run(run);
 })();

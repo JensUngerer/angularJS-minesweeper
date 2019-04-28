@@ -2,7 +2,7 @@
   "use strict";
 
   angular
-    .module('myApp')
+    .module('minesweeperApp')
     .controller('NavbarController', NavbarController);
 
   function NavbarController() {
