@@ -39,19 +39,19 @@
 
             function setText() {
                 var result;
-                if (vm.field.state === minesweeperFieldState.Unrevealed) {
+                if (vm && vm.field && vm.field.state === minesweeperFieldState.Unrevealed) {
                     result = '?';
                 }
-                if (vm.field.state === minesweeperFieldState.Marked) {
+                if (vm && vm.field && vm.field.state === minesweeperFieldState.Marked) {
                     result = '-';
                 }
-                if (vm.field.state === minesweeperFieldState.Revealed && vm.field.value === -1) {
+                if (vm && vm.field && vm.field.state === minesweeperFieldState.Revealed && vm.field.value === -1) {
                     result = 'B';
                 }
-                if (vm.field.state === minesweeperFieldState.Revealed && vm.field.value === 0) {
+                if (vm && vm.field && vm.field.state === minesweeperFieldState.Revealed && vm.field.value === 0) {
                     result = '0';
                 }
-                if (vm.field.state === minesweeperFieldState.Revealed && vm.field.value > 0) {
+                if (vm && vm.field && vm.field.state === minesweeperFieldState.Revealed && vm.field.value > 0) {
                     result = vm.field.value;
                 }
                 vm.text = result;
@@ -59,19 +59,19 @@
 
             function setColor() {
                 var result;
-                if (vm.field.state === minesweeperFieldState.Unrevealed) {
+                if (vm && vm.field && vm.field.state === minesweeperFieldState.Unrevealed) {
                     result = 'blue';
                 }
-                if (vm.field.state === minesweeperFieldState.Marked) {
+                if (vm && vm.field && vm.field.state === minesweeperFieldState.Marked) {
                     result = 'grey';
                 }
-                if (vm.field.state === minesweeperFieldState.Revealed && vm.field.value === -1) {
+                if (vm && vm.field && vm.field.state === minesweeperFieldState.Revealed && vm.field.value === -1) {
                     result = 'red';
                 }
-                if (vm.field.state === minesweeperFieldState.Revealed && vm.field.value === 0) {
+                if (vm && vm.field && vm.field.state === minesweeperFieldState.Revealed && vm.field.value === 0) {
                     result = 'lightgreen';
                 }
-                if (vm.field.state === minesweeperFieldState.Revealed && vm.field.value > 0) {
+                if (vm && vm.field && vm.field.state === minesweeperFieldState.Revealed && vm.field.value > 0) {
                     result = 'green';
                 }
                 vm.color = result;
