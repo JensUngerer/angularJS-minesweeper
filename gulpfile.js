@@ -24,6 +24,7 @@ const scripts = [
   'app/directives/**/*.js',
   'app/views/**/*.js',
   'app/components/**/*.js',
+  'app/logic/**/*.js',
   '!app/**/*.test.js',
   '!app/app.min.js'
 ];
