@@ -28,7 +28,7 @@
                 vm.game.reset();
             }
         },
-        controllerAs: 'vm'
+        controllerAs: 'minesweeperGameCtrl'
     };
 
     angular
