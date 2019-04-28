@@ -1,5 +1,6 @@
 {
-  "name": "angularjs-gulp-starter",
+  "name": "AngularJS-Minesweeper",
+  "author": "Jens Ungerer",
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
