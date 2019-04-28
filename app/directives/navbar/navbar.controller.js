@@ -9,7 +9,7 @@
     "ngInject";
     var vm = this;
 
-    vm.title = "AngularJS-Minesweepers";
+    vm.title = "AngularJS-Minesweeper";
   }
 
 })();
