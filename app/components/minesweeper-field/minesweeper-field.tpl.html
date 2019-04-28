@@ -1,3 +1,8 @@
-<div>
+<!-- <div>
     a Minesweeper-field
-</div>
+</div> -->
+<button class="minesweeperField"
+		style="background-color: {{ minesweeperFieldCtrl.color }}"
+		data-right-click="minesweeperFieldCtrl.mark($event)"
+		data-ng-click="minesweeperFieldCtrl.reveal()">
+{{minesweeperFieldCtrl.text}}</button>
