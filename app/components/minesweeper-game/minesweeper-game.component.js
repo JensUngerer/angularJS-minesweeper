@@ -1,7 +1,7 @@
 (function () {
     "use strict";
 
-    const minesweeperGameComponent = {
+    var minesweeperGameComponent = {
         templateUrl: 'components/minesweeper-game/minesweeper-game.tpl.html',
 
         controller: controller,
