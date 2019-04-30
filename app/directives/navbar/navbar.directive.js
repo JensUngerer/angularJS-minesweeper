@@ -5,6 +5,11 @@
     .module('minesweeperApp')
     .directive('navbar', navbar);
 
+  /**
+   * An ECMA-Script 5 function which defines the <navbar>-directive.
+   *
+   * @returns
+   */
   function navbar() {
     return {
       restrict: 'E',
@@ -13,5 +18,4 @@
       controllerAs: 'vm'
     };
   }
-
 })();
