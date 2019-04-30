@@ -1,3 +1,11 @@
+
+/**
+ * An ECMA-Script 5 "class"-constructor function for the minesweeper-game logic.
+ *
+ * @param {*} _width The number of game-fields in the horizontal-direction (width).
+ * @param {*} _height The number of game-fields in the vertical-direction (height).
+ * @param {*} _bombs The number of bombs.
+ */
 function MinesweeperGame(_width, _height, _bombs) {
     var width = _width; 
     var height = _height;
@@ -67,7 +75,11 @@ function MinesweeperGame(_width, _height, _bombs) {
     this.fields = fields;
     this.reset();
    
-   
+    
+    /**
+     * Initialize the number of neighbors(-bombs) of each field.
+     * @param {*} _fields The objects of the kind MinesweeperField
+     */
     function initNeighbours(_fields) {
         var neighbours;
         _fields.forEach(function(row, x) {
@@ -89,7 +101,12 @@ function MinesweeperGame(_width, _height, _bombs) {
            });
         });
         
-        
+        /**
+         * A helper function in order to check whether the game-field boundary is reached.
+         * @param {*} x The x-coordinate within the game-fields.
+         * @param {*} y The y-coordinate within the game-fields.
+         * @returns
+         */
         function getField(x, y) {
            if (fields[x] && fields[x][y]) {
                return fields[x][y];
@@ -98,6 +115,5 @@ function MinesweeperGame(_width, _height, _bombs) {
            }
         }
     }
-   
    }
    
