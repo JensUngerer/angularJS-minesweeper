@@ -1,3 +1,9 @@
+/**
+ * An ECMA-Script 5 "class"-constructor function for the minesweeper-field logic.
+ *
+ * @param {*} x The x-coordinate within the game-fields.
+ * @param {*} y The y-coordinate within the game-fields.
+ */
 function MinesweeperField(x, y) {
     var state;
     Object.defineProperties(this, {
