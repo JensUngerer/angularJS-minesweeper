@@ -1,26 +1,14 @@
-# AngularJS Starter Application
+# AngularJS-Minesweeper
 
-## Prerequisites
+## Scaffold
+This repository is based on the scaffold (starter): https://github.com/dmellstrom/angularjs-gulp-starter.
+So, please, regard the prerequisites and the "getting started" in this repository.
 
-- `node >= 8.0.0`/`npm >= 5.0.0`
-
-## Getting Started
-
-    npm install
-    npm start
-
-The default gulp task will serve the application to `localhost:8888`, watch source files for changes, and livereload any recompiled assets.
-
-## Preparing for Distribution
-
-    npm run build
-
-The `build` script triggers minification and versioning of the JavaScript and CSS, outputting the results to the `dist` directory along with all other necessary assets.
-
-The resulting build may be deployed as any routed AngularJS application -- by copying the contents of `dist/` to a serveable directory with `index.html` configured as the fallback.
-
-## Previewing the Build
-
-    npm run preview
-
-The `preview` script serves the distribution build to `localhost:8888` so it may be examined before deployment.
+## Purpose
+This application was (originally) ported from an Angular-2.0-application. 
+This Angular-2-application was written by my colleague Philipp.
+(Nevertheless, the entire structure had to be adapted for an AngularJS-application).
+It led to an AngularJS-1.5-application which was intended as a training example, 
+in order to use AngularJS-components.
+In a next step, this application will be used as basis for another training example,
+in order to port an (now) AngularJS-1.7-App to an Angular-8-App.
