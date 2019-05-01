@@ -1,0 +1,14 @@
+@startuml
+class MinesweeperGameComponent {
+ + game: MinesweeperGame
+ + tabledField: MinesweeperField[]
+ + reset()
+}
+class MinesweeperGame {
+
+}
+
+MinesweeperGameComponent --> MinesweeperGame
+
+
+@enduml
