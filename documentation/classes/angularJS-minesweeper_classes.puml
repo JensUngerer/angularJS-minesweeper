@@ -5,7 +5,14 @@ class MinesweeperGameComponent {
  + reset()
 }
 class MinesweeperGame {
-
+    - width: number
+    - height: number
+    - bombs: number
+    + revealedCounter: number
+    + fields: MinesweeperField[]
+    - initNeighbours()
+    - getField()
+    + reset()
 }
 
 MinesweeperGameComponent --> MinesweeperGame
