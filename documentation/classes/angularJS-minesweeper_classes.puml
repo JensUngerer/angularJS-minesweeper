@@ -10,19 +10,25 @@ class MinesweeperGame {
     - bombs: number
     + revealedCounter: number
     + fields: MinesweeperField[]
-    - initNeighbours()
-    - getField()
-    + reset()
+    - initNeighbours(): void
+    - getField(): MinesweeperField
+    + reset(): void
 }
 
 class MinesweeperField  {
-    
+    + x: number
+    + y: number
+    + value: number
+    + state: number
+    + mark(): void
+    + reveal(): void
+    + reset(): void
 }
 
 class MinesweeperFieldComponent {
-    + field
-    + state
-    + $onChanges()
+    + field: MinesweeperField
+    + state: MinesweeperStateEnum
+    + $onChanges(): void
 }
 
 MinesweeperGameComponent --> MinesweeperGame
