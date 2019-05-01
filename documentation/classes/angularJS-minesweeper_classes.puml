@@ -1,8 +1,8 @@
 @startuml
 class MinesweeperGameComponent {
- + game: MinesweeperGame
- + tabledField: MinesweeperField[]
- + reset()
+    + game: MinesweeperGame
+    + tabledField: MinesweeperField[]
+    + reset()
 }
 class MinesweeperGame {
     - width: number
@@ -15,7 +15,20 @@ class MinesweeperGame {
     + reset()
 }
 
+class MinesweeperField  {
+    
+}
+
+class MinesweeperFieldComponent {
+    + field
+    + state
+    + $onChanges()
+}
+
 MinesweeperGameComponent --> MinesweeperGame
+MinesweeperGameComponent --> MinesweeperField
+MinesweeperGame --> MinesweeperField
+MinesweeperFieldComponent --> MinesweeperField
 
 
 @enduml
