@@ -16,7 +16,7 @@
     "angular-messages": "^1.8.2",
     "angular-route": "^1.8.2",
     "fstream": "^1.0.12",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
     "minimist": "^1.2.5",
     "tar": "^4.4.13",
