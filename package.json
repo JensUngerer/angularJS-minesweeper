@@ -19,7 +19,7 @@
     "lodash": "^4.17.20",
     "lodash.template": "^4.5.0",
     "minimist": "^1.2.5",
-    "tar": "^4.4.13",
+    "tar": "^4.4.18",
     "yargs-parser": "^20.2.4"
   },
   "devDependencies": {
